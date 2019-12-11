@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Todos = ({ items, deleteItem }) => {
+const Todo = ({ items, deleteItem }) => {
 
     const style = {
         float: 'right',
@@ -27,4 +27,4 @@ const Todos = ({ items, deleteItem }) => {
     )
 }
 
-export default Todos
+export default Todo
