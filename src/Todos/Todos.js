@@ -2,11 +2,17 @@ import React from 'react'
 
 const Todos = ({ items, deleteItem }) => {
 
+    const style = {
+        float: 'right',
+        color: 'red'
+    }
+
     const list = items.length ? (
         items.map(item => {
             return (
                 <li className="collection-item" key={item.id}>
-                    <span onClick={() => deleteItem(item.id)}>{item.content}</span>
+                    <span>{item.name}</span>
+                    <span style={style} onClick={() => deleteItem(item.id)}>Remove</span>
                 </li>
             )
         })
